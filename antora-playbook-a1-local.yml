@@ -8,17 +8,15 @@ content:
       start_path: top
       branches: HEAD
 
-    - url: ../a1-product
+    - url: ../sc-docs-a1
       branches: [HEAD]
-      start_paths: en, ja
-
-    - url: ../a1-software
-      branches: [HEAD]
-      start_paths: en, ja
-
-    - url: ../a1-fpga
-      branches: [HEAD]
-      start_paths: en, ja
+      start_paths:
+        - product/en
+        - product/ja
+        - software/en
+        - software/ja
+        - fpga/en
+        - fpga/ja
 
 asciidoc:
   attributes:

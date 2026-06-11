@@ -49,13 +49,11 @@ npx antora antora-playbook.yml
 When you are updating or fixing one document set, you may prefer to
 build only that component.
 
-As an example, to build the SC-OBC Module V1 manual, you need the
-following three additional repositories:
+As an example, to build the SC-OBC Module V1 manual, clone its documentation
+repository next to `sc-docs`:
 
 ```
-git clone https://github.com/spacecubics/scobc-v1-product-manual v1-product
-git clone https://github.com/spacecubics/scobc-v1-software-manual v1-software
-git clone https://github.com/spacecubics/scobc-v1-fpga-developers-guide v1-fpga
+git clone https://github.com/spacecubics/sc-docs-v1
 ```
 
 After clone them, you will have directories like this:
@@ -64,9 +62,7 @@ After clone them, you will have directories like this:
 tree -L 1
 .
 ├── sc-docs
-├── v1-fpga
-├── v1-product
-└── v1-software
+└── sc-docs-v1
 
 ```
 

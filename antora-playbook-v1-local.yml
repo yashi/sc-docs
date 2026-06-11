@@ -8,14 +8,12 @@ content:
       start_path: top
       branches: HEAD
 
-    - url: ../v1-product
+    - url: ../sc-docs-v1
       branches: [HEAD]
-
-    - url: ../v1-software
-      branches: [HEAD]
-
-    - url: ../v1-fpga
-      branches: [HEAD]
+      start_paths:
+        - product
+        - software
+        - fpga
 
 asciidoc:
   attributes:

@@ -8,26 +8,22 @@ content:
       start_path: top
       branches: HEAD
 
-    - url: https://github.com/spacecubics/scobc-a1-product-manual
+    - url: https://github.com/spacecubics/sc-docs-a1
       branches: [HEAD]
-      start_paths: en, ja
+      start_paths:
+        - product/en
+        - product/ja
+        - software/en
+        - software/ja
+        - fpga/en
+        - fpga/ja
 
-    - url: https://github.com/spacecubics/scobc-a1-software-manual
+    - url: https://github.com/spacecubics/sc-docs-v1
       branches: [HEAD]
-      start_paths: en, ja
-
-    - url: https://github.com/spacecubics/scobc-a1-fpga-technical-reference-manual
-      branches: [HEAD]
-      start_paths: en, ja
-
-    - url: https://github.com/spacecubics/scobc-v1-product-manual
-      branches: [HEAD]
-
-    - url: https://github.com/spacecubics/scobc-v1-software-manual
-      branches: [HEAD]
-
-    - url: https://github.com/spacecubics/scobc-v1-fpga-developers-guide
-      branches: [HEAD]
+      start_paths:
+        - product
+        - software
+        - fpga
 
 asciidoc:
   attributes:
